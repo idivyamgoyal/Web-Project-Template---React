@@ -33,14 +33,18 @@
     "arrow-body-style": "off",
     "react/require-default-props": "off",
     "@typescript-eslint/no-empty-interface": "off",
-    "react/no-unused-prop-types": "off"
+    "react/no-unused-prop-types": "off",
+    "no-undef": "off",
+    "@typescript-eslint/no-shadow": ["off"],
+    "no-shadow": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "react/function-component-definition": "off"
   },
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
-      "rules": {
-        "no-undef": "off"
-      }
+      "rules": {}
     }
   ],
   "settings": {
