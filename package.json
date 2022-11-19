@@ -20,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "npx husky install"
   },
   "browserslist": {
     "production": [
@@ -47,6 +48,21 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "eslint --quiet"
+    ],
+    "*.tsx": [
+      "prettier --write",
+      "eslint --quiet"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
   }
 }
